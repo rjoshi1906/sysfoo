@@ -42,9 +42,9 @@ pipeline {
           }
         }
 
-        stage('Upload Artifact') {
+        stage('UploadArtifact') {
           steps {
-            mail(subject: 'UploadDone', body: 'Hello World', from: 'rjoshi@adobe.com', to: 'rjoshi@adobe.com', replyTo: 'rjoshi@adobe.com')
+            sleep 2
           }
         }
 
