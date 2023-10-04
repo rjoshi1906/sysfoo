@@ -67,6 +67,13 @@ pipeline {
       }
     }
 
+    stage('Deploy to Dev') {
+      agent any
+      steps {
+        sh 'docker-compose up -d'
+      }
+    }
+
     stage('Sleep') {
       steps {
         sleep 2
